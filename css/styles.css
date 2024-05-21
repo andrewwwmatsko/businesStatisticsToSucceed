@@ -228,10 +228,18 @@ button {
   margin-bottom: 40px;
 }
 .how-it-works-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .works-list-item {
 }
+
+.works-list-img {
+  margin-bottom: 20px;
+}
 .works-item-title {
+  margin-bottom: 16px;
 }
 .works-item-text {
 }
