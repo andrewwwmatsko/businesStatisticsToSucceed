@@ -3,12 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Business Statistics</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="header-logo">
+          <img
+            src="./img/logo-icon.svg"
+            alt="black rounded logo with number 18"
+          />
+        </a>
+
+        <button type="button" class="header-mobmenu-btn">
+          <svg class="hamburger-menu-icon">
+            <use href="./img/symbol-defs.svg#icon-hamburger-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">
+            Always Track & Analyze Your Business Statistics To Succeed.
+          </h1>
+
+          <p class="hero-description">
+            A better way to manage your sales, team, clients & marketing — on a
+            single platform. Powerful, affordable & easy.
+          </p>
+
+          <div class="subscription-wrapper">
+            <input
+              autocomplete="off"
+              class="email"
+              type="text"
+              placeholder="Enter your email"
+              name="email"
+            />
+            <button class="get-started-btn" type="button">Get started</button>
+          </div>
+
+          <ul class="supported-payments-list">
+            <li class="payment-method">
+              <img src="./img/visa-icon.svg" alt="visa-icon" />
+            </li>
+            <li class="payment-method">
+              <img src="./img/mastercard-icon.svg" alt="mastercard-icon" />
+            </li>
+            <li class="payment-method">
+              <img src="./img/paypal-icon.svg" alt="paypal-icon" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <div class="container">
+          <p class="about-us-name">About us</p>
+
+          <h2 class="about-us-title">
+            Faster, friendlier feedback loops make life easier.
+          </h2>
+
+          <p class="about-us-description">
+            Add a Viewer to your team so they can see everything you share, or
+            invite people to individual documents. It’s up to you. Stakeholders
+            can check out designs in their web browser, test prototypes and
+            leave feedback for free.
+          </p>
+
+          <picture class="about-us-picture">
+            <source
+              width="328"
+              height="292"
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/about-us-1440-picture.png    1x,
+                ./img/about-us-1440-2x-picture.png 2x
+              "
+            />
+            <source
+              width="328"
+              height="292"
+              media="(min-width: 1024px)"
+              srcset="
+                ./img/about-us-1024-picture.png    1x,
+                ./img/about-us-1024-2x-picture.png 2x
+              "
+            />
+            <source
+              width="328"
+              height="292"
+              media="(min-width: 360px)"
+              srcset="
+                ./img/about-us-mob-picture.png    1x,
+                ./img/about-us-mob-picture-2x.png 2x
+              "
+            />
+            <img
+              width="328"
+              height="292"
+              src="./img/about-us-mob-picture.png"
+              alt="Woman lies on the planet Earth"
+            />
+          </picture>
+
+          <ul class="about-us-list">
+            <li class="about-us-list-item">
+              <p class="list-item-text">
+                Shared Cloud Libraries, for a single source of truth
+              </p>
+            </li>
+            <li class="about-us-list-item">
+              <p class="list-item-text">
+                Prototype previews for user testing and research
+              </p>
+            </li>
+            <li class="about-us-list-item">
+              <p class="list-item-text">Easy organization with projects</p>
+            </li>
+            <li class="about-us-list-item">
+              <p class="list-item-text">
+                Free developer handoff, right inside the browser
+              </p>
+            </li>
+            <li class="about-us-list-item">
+              <p class="list-item-text">Two-factor authentication and SSO</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="how-it-works">
+        <div class="container">
+          <p class="how-it-works-name">How it works</p>
+
+          <h2 class="how-it-works-title">
+            Building the best space for collaboration.
+          </h2>
+
+          <picture class="how-it-works-picture">
+            <source
+              media="(min-width: 2560)"
+              srcset="
+                ./img/how-it-works-picture-2550.png    1x,
+                ./img/how-it-works-picture-2550-2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/how-it-works-picture-1440.png    1x,
+                ./img/how-it-works-picture-1440-2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                ./img/how-it-works-picture-1024.png    1x,
+                ./img/how-it-works-picture-1024-2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 360px)"
+              srcset="
+                ./img/how-it-works-picture-mob.png    1x,
+                ./img/how-it-works-picture-mob-2x.png 2x
+              "
+            />
+            <img
+              src="./img/how-it-works-picture-mob.png"
+              alt="Dancing woman holding an instrument above her head"
+            />
+          </picture>
+
+          <ul class="how-it-works-list">
+            <li class="works-list-item">
+              <img src="./img/shared-cloud-icon.svg" alt="Puzzle" />
+
+              <h3 class="works-item-title">Shared Cloud Libraries</h3>
+
+              <p class="works-item-text">
+                Navigate to the Your work panel in the left sidebar. Select the
+                library you want to share. Select the Share icon in the upper
+                right to share the library.
+              </p>
+            </li>
+            <li class="works-list-item">
+              <img src="./img/free-developer-icon.svg" alt="Scheme" />
+
+              <h3 class="works-item-title">
+                Free developer handoff, right inside
+              </h3>
+
+              <p class="works-item-text">
+                Cloud Inspector makes it easy for developers to get the
+                information they need to turn pixels into code — all in the
+                browser and, most importantly, for free.
+              </p>
+            </li>
+            <li class="works-list-item">
+              <img src="./img/real-time-icon.svg" alt="Rocket" />
+
+              <h3 class="works-item-title">Real-time collaborative editing</h3>
+
+              <p class="works-item-text">
+                Room Service helps you build real-time collaborative features.
+                Add real-time data sync! Let users edit the same data at the
+                same time.
+              </p>
+            </li>
+            <li class="works-list-item">
+              <img src="./img/integrations-icon.svg" alt="Box" />
+
+              <h3 class="works-item-title">Integrations with the Cloud API</h3>
+
+              <p class="works-item-text">
+                Unlocking that value requires an iPaaS that delivers the
+                transformative power of APIs and integration.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
