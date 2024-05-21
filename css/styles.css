@@ -16,6 +16,28 @@ section {
   padding-top: 80px;
 }
 
+.section-name {
+  border: 1px solid #000;
+  max-width: 160px;
+  padding: 6px 19px;
+
+  text-align: center;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.85;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.27;
+  letter-spacing: -0.09em;
+  margin-bottom: 60px;
+  max-width: 269px;
+}
+
 p,
 h1,
 h2,
@@ -85,6 +107,7 @@ button {
 
 /* Main */
 
+/* Hero */
 .hero {
   padding-top: 40px;
 }
@@ -150,30 +173,15 @@ button {
   flex-wrap: wrap;
   gap: 28px;
 }
-.payment-method {
-}
 
-/* Hero */
+/* ============ */
 
-.about-us-name {
-  color: #151515;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 1.85;
-  text-transform: uppercase;
-  border: 1px solid #000;
-  max-width: 115px;
-  padding: 6px 17px;
-  margin-bottom: 40px;
-}
-.about-us-title {
-  font-size: 44px;
-  font-weight: 400;
-  line-height: 1.27;
-  letter-spacing: -0.09em;
-  max-width: 311px;
+/* About us */
+
+.about-us .section-title {
   margin-bottom: 20px;
+  letter-spacing: -0.11em;
+  max-width: 311px;
 }
 .about-us-description {
   line-height: 1.44;
@@ -203,24 +211,7 @@ button {
 
 /* How it works */
 
-.how-it-works-name {
-  border: 1px solid #000;
-  max-width: 160px;
-  padding: 6px 19px;
-
-  text-align: center;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 1.85;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-.how-it-works-title {
-  font-size: 44px;
-  font-weight: 400;
-  line-height: 1.27;
-  letter-spacing: -0.09em;
+.how-it-works .section-title {
   margin-bottom: 60px;
   max-width: 269px;
 }
@@ -249,6 +240,141 @@ button {
 .works-item-text {
   line-height: 1.44;
   max-width: 328px;
+}
+
+/* ============ */
+
+/* Pricing */
+
+.pricing .section-title {
+  margin-bottom: 25px;
+  max-width: 266px;
+}
+
+.pricing-description {
+  max-width: 328px;
+  line-height: 1.44;
+}
+
+.pricing-picture {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.pricing-plans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.pricing-list-plan {
+  max-width: 328px;
+  border: 1px solid #151515;
+  background: #f0f0f0;
+}
+
+.pricing-list-plan p {
+  line-height: 1.55;
+}
+
+.pricing-plan-title-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.dollar-sign {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.pricing-plan-title {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.05em;
+  margin-right: 12px;
+}
+
+.per-month {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.4;
+  max-width: 16px;
+  max-height: 28px;
+  align-self: flex-end;
+}
+.pricing-plan-description {
+  font-size: 20px;
+  line-height: 1.4;
+  max-width: 203px;
+  margin-bottom: 60px;
+}
+.pricing-plan-features-list {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-bottom: 153px;
+}
+
+.pricing-plan-features-list li:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.pricing-list-plan {
+  padding: 50px 40px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #151515;
+  background: #f0f0f0;
+}
+
+.pricing-list-plan:nth-of-type(2) {
+  background-color: #151515;
+  color: #fff;
+}
+
+.pricing-list-plan:nth-of-type(2) .dollar-sign {
+  color: #fff;
+}
+
+.pricing-list-plan:nth-of-type(2) .pricing-plan-title {
+  color: #fff;
+}
+.pricing-list-plan:nth-of-type(2) .per-month {
+  color: #fff;
+}
+
+.pricing-list-plan:nth-of-type(2) .pricing-plan-description {
+  color: #fff;
+  max-width: 125px;
+  letter-spacing: -0.04em;
+}
+
+.pricing-list-plan:nth-of-type(2) p {
+  color: #fff;
+}
+
+.pricing-list-plan:nth-of-type(2) .pricing-plan-features-list {
+  margin-bottom: 29px;
+}
+
+.pricing-list-plan:nth-of-type(2) .pricing-join-btn {
+  background-color: #fff;
+  color: #151515;
+}
+
+.pricing-list-plan:nth-of-type(3) .pricing-plan-features-list {
+  margin-bottom: 49px;
+}
+
+.pricing-join-btn {
+  background-color: #151515;
+  border: none;
+  padding: 14px 36px;
+  min-width: 248px;
+  align-self: center;
+
+  color: #fff;
+  text-align: center;
+  line-height: 1.33;
 }
 
 /* ============ */
