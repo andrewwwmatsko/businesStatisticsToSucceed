@@ -146,6 +146,8 @@ button {
 }
 .supported-payments-list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 28px;
 }
 .payment-method {
@@ -220,6 +222,7 @@ button {
   line-height: 1.27;
   letter-spacing: -0.09em;
   margin-bottom: 60px;
+  max-width: 269px;
 }
 
 .how-it-works-picture {
@@ -232,16 +235,20 @@ button {
   flex-direction: column;
   gap: 40px;
 }
-.works-list-item {
-}
 
 .works-list-img {
   margin-bottom: 20px;
 }
 .works-item-title {
+  font-size: 28px;
+  line-height: 120%;
+  font-weight: 400;
   margin-bottom: 16px;
+  max-width: 330px;
 }
 .works-item-text {
+  line-height: 1.44;
+  max-width: 328px;
 }
 
 /* ============ */
