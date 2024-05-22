@@ -17,7 +17,8 @@ section {
 }
 
 .section-name {
-  border: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
   max-width: 160px;
   padding: 6px 19px;
 
@@ -460,7 +461,8 @@ button {
 }
 
 .show-more-btn.is-active {
-  background-image: url("../img/icons/minus-icon.svg");
+  /* background-image: url("../img/icons/minus-icon.svg"); */
+  background-image: url("../img/icons/minus.png");
   background-repeat: no-repeat;
   background-size: 28px;
   background-position: center;
