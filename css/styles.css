@@ -461,8 +461,7 @@ button {
 }
 
 .show-more-btn.is-active {
-  /* background-image: url("../img/icons/minus-icon.svg"); */
-  background-image: url("../img/icons/minus.png");
+  background-image: url("../img/icons/minus-icon.svg");
   background-repeat: no-repeat;
   background-size: 28px;
   background-position: center;
