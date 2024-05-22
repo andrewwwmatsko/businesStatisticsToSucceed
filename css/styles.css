@@ -169,6 +169,11 @@ button {
 .get-started-btn:hover {
   background-color: rgb(25, 44, 151);
 }
+
+.get-started-btn:active {
+  transform: scale(0.99);
+}
+
 .supported-payments-list {
   display: flex;
   justify-content: center;
@@ -478,5 +483,128 @@ button {
 }
 
 /* ============ */
+
+/* ================ */
+
+/* Footer */
+.footer {
+  background-color: #151515;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.footer .container {
+  padding: 0 20px;
+}
+
+.footer-logo {
+  margin-bottom: 40px;
+  display: block;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+  max-width: 299px;
+}
+
+.footer .subscription-wrapper {
+  margin-bottom: 60px;
+}
+
+.footer .email {
+  background: #fff;
+}
+
+.footer .get-started-btn {
+  border: 1px solid #ffffff7a;
+  background: #151515;
+  color: #ffffffaa;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .get-started-btn:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.footer-nav {
+  margin-bottom: 60px;
+}
+
+.footer-menu,
+.footer-customer-actions,
+.footer-email {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-menu-link,
+.footer-customer-link {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.44;
+  padding: 6px 20px;
+  border: 1px solid transparent;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-menu-link:hover,
+.footer-customer-link:hover,
+.footer-email-link:hover {
+  border-color: #fff;
+}
+
+.footer-customer-actions {
+  margin-bottom: 60px;
+}
+
+.footer-email {
+  margin-bottom: 60px;
+}
+
+.footer-email-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.footer-email-link {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.44;
+  padding: 6px 20px;
+  border: 1px solid transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-contacts {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.terms,
+.terms a {
+  color: #fff;
+  text-align: center;
+  line-height: 1.44;
+  max-width: 175px;
+  margin: 0 auto;
+}
 
 /* ================ */
