@@ -396,4 +396,62 @@ button {
 
 /* ============ */
 
+/* FAQs section */
+
+.faqs .section-name {
+  max-width: 79px;
+  padding: 6px 20px;
+}
+
+.faqs .section-title {
+  margin-bottom: 20px;
+  max-width: 188px;
+}
+.faqs-description {
+  max-width: 320px;
+  line-height: 1.44;
+  margin-bottom: 40px;
+}
+
+.faqs-picture {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.faqs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faqs-item:not(:first-of-type) {
+  border-top: 1px solid #151515;
+  padding-top: 20px;
+}
+
+.faqs-item {
+  max-width: 328px;
+}
+.faqs-item-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.faqs-item-title {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.faqs-item-answer {
+  line-height: 1.44;
+  max-width: 320px;
+}
+
+.show-more-btn {
+  border: none;
+}
+
+/* ============ */
+
 /* ================ */
