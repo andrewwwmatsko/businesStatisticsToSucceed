@@ -83,12 +83,19 @@ button {
     max-width: 1024px;
     padding: 0 32px;
   }
+  section {
+    padding-top: 120px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
     padding: 0 90px;
+  }
+
+  section {
+    padding-top: 200px;
   }
 }
 
@@ -329,6 +336,7 @@ button {
   padding: 14px 16px;
   max-width: 328px;
   border: none;
+  max-width: 184px;
 }
 
 .email::placeholder {
@@ -373,6 +381,49 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   gap: 28px;
+}
+
+/* Adaptive for 1024px */
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero .container {
+    background-image: url("../img/hero/hero-1024.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 490px auto;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero .container {
+      background-image: url("../img/hero/hero-1024-2x.png");
+    }
+  }
+
+  .hero-title {
+    font-size: 70px;
+    line-height: 1.14;
+    max-width: 619px;
+  }
+
+  .hero-description {
+    max-width: 565px;
+  }
+
+  .subscription-wrapper {
+    max-width: 505px;
+  }
+
+  .email {
+    min-width: 361px;
+    margin-bottom: 80px;
+  }
+  .supported-payments-list {
+    justify-content: flex-start;
+  }
 }
 
 /* About us */
