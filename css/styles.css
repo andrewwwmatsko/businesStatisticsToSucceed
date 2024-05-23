@@ -477,6 +477,14 @@ button {
   }
 }
 
+@media screen and (min-width: 2560px) {
+  .hero .container {
+    padding-left: 524px;
+    padding-right: 0;
+    margin-right: 524px;
+  }
+}
+
 /* About us */
 
 .about-us .section-title {
@@ -523,9 +531,6 @@ button {
     display: flex;
   }
 
-  .about-us .section-name {
-    padding-bottom: 0;
-  }
   .about-us .section-title {
     max-width: 464px;
   }
@@ -551,6 +556,16 @@ button {
 
   .about-us-picture {
     margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .about-us .container {
+    padding-left: 524px;
+    padding-right: 524px;
+  }
+  .about-us-picture {
+    margin-right: 188px;
   }
 }
 
