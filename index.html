@@ -390,44 +390,76 @@
 
       <section class="pricing" id="pricing">
         <div class="container">
-          <p class="section-name">Pricing</p>
+          <div class="pricing-top-part">
+            <picture class="pricing-picture desktop">
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/pricing-section/pricing-1440-picture.png    1x,
+                  ./img/pricing-section/pricing-1440-2x-picture.png 2x
+                "
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./img/pricing-section/pricing-1024-picture.png    1x,
+                  ./img/pricing-section/pricing-1024-2x-picture.png 2x
+                "
+              />
+              <source
+                media="(min-width: 360px)"
+                srcset="
+                  ./img/pricing-section/pricing-mob-picture.png    1x,
+                  ./img/pricing-section/pricing-mob-2x-picture.png 2x
+                "
+              />
+              <img
+                src="./img/pricing-section/pricing-mob-picture.png"
+                alt="A man rides on a pig"
+              />
+            </picture>
 
-          <h2 class="section-title">
-            Select a membership level the right price for you.
-          </h2>
+            <div class="pricing-top-part-content">
+              <p class="section-name">Pricing</p>
 
-          <p class="pricing-description">
-            Prices listed in USD. Taxes may apply. By using program you agree to
-            our terms and policies.
-          </p>
+              <h2 class="section-title">
+                Select a membership level the right price for you.
+              </h2>
 
-          <picture class="pricing-picture">
-            <source
-              media="(min-width: 1440px)"
-              srcset="
-                ./img/pricing-section/pricing-1440-picture.png    1x,
-                ./img/pricing-section/pricing-1440-2x-picture.png 2x
-              "
-            />
-            <source
-              media="(min-width: 1024px)"
-              srcset="
-                ./img/pricing-section/pricing-1024-picture.png    1x,
-                ./img/pricing-section/pricing-1024-2x-picture.png 2x
-              "
-            />
-            <source
-              media="(min-width: 360px)"
-              srcset="
-                ./img/pricing-section/pricing-mob-picture.png    1x,
-                ./img/pricing-section/pricing-mob-2x-picture.png 2x
-              "
-            />
-            <img
-              src="./img/pricing-section/pricing-mob-picture.png"
-              alt="A man rides on a pig"
-            />
-          </picture>
+              <p class="pricing-description">
+                Prices listed in USD. Taxes may apply. By using program you
+                agree to our terms and policies.
+              </p>
+            </div>
+
+            <picture class="pricing-picture">
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/pricing-section/pricing-1440-picture.png    1x,
+                  ./img/pricing-section/pricing-1440-2x-picture.png 2x
+                "
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./img/pricing-section/pricing-1024-picture.png    1x,
+                  ./img/pricing-section/pricing-1024-2x-picture.png 2x
+                "
+              />
+              <source
+                media="(min-width: 360px)"
+                srcset="
+                  ./img/pricing-section/pricing-mob-picture.png    1x,
+                  ./img/pricing-section/pricing-mob-2x-picture.png 2x
+                "
+              />
+              <img
+                src="./img/pricing-section/pricing-mob-picture.png"
+                alt="A man rides on a pig"
+              />
+            </picture>
+          </div>
 
           <ul class="pricing-plans-list">
             <li class="pricing-list-plan">
