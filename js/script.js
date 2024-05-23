@@ -25,6 +25,7 @@ const mobmenu = {
   closeMenuBtn: document.querySelector("[data-menu-close]"),
   openMenuBtn: document.querySelector("[data-menu-open]"),
   mobModal: document.querySelector("[data-menu]"),
+  body: document.querySelector("body"),
 };
 
 mobmenu.openMenuBtn.addEventListener("click", openMenuHandler);
@@ -32,6 +33,7 @@ mobmenu.closeMenuBtn.addEventListener("click", closeMenuHandler);
 
 function openMenuHandler() {
   mobmenu.mobModal.classList.add("is-active");
+  mobmenu.body.classList.add("fixed-position");
 }
 
 function closeMenuHandler() {
