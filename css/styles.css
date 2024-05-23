@@ -426,7 +426,7 @@ button {
 
   .hero-title {
     font-size: 70px;
-    line-height: 1.14;
+    line-height: normal;
     max-width: 619px;
   }
 
@@ -444,6 +444,24 @@ button {
   }
   .supported-payments-list {
     justify-content: flex-start;
+  }
+}
+
+/* Adaptive 1440 */
+
+@media screen and (min-width: 1440px) {
+  .hero .container {
+    background-image: url("../img/hero/hero-1440.png");
+  }
+  @media (min-resolution: 192dpi) {
+    .hero .container {
+      background-image: url("../img/hero/hero-1440-2x.png");
+    }
+  }
+
+  .hero-title {
+    max-width: 721px;
+    letter-spacing: -0.04em;
   }
 }
 
