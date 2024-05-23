@@ -721,23 +721,20 @@ button {
   .pricing-top-part .pricing-top-part-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     margin-bottom: 58px;
   }
 
   .pricing .section-name {
-    text-align: end;
-    padding-bottom: 0;
+    text-align: right;
   }
 
   .pricing .section-title {
     max-width: 396px;
-    text-align: end;
-
     text-align: right;
     font-size: 60px;
     line-height: normal;
     letter-spacing: -3px;
+    align-self: flex-end;
   }
 
   .pricing-description {
