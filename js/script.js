@@ -40,3 +40,21 @@ function closeMenuHandler() {
   mobmenu.mobModal.classList.remove("is-active");
   mobmenu.body.classList.remove("fixed-position");
 }
+
+// close mob menu when following anchor links
+
+const mobMenuList = {
+  mobMenuUl: document.querySelector(".mob-menu-list"),
+  aboutUsLink: document.querySelector("a[href='#about-us']"),
+  howItWorksLink: document.querySelector("a[href='#how-it-works']"),
+  pricingLink: document.querySelector("a[href='#pricing']"),
+  faqsLink: document.querySelector("a[href='#faqs']"),
+};
+
+mobMenuList.mobMenuUl.addEventListener("click", closeMenyByAnchorLink);
+
+function closeMenyByAnchorLink(event) {
+  if (event.target.classList.contains("mob-menu-link")) {
+    closeMenuHandler();
+  }
+}
