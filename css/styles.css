@@ -1023,6 +1023,15 @@ button {
   }
 }
 
+@media screen and (min-width: 2560px) {
+  .faqs .container {
+    padding-right: 524px;
+  }
+  .faqs-content-wrapper {
+    margin-right: 72px;
+  }
+}
+
 /* ============ */
 
 /* ================ */
