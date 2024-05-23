@@ -789,11 +789,11 @@ button {
   .pricing-top-part {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 58px;
   }
   .pricing-top-part .pricing-top-part-content {
     display: flex;
     flex-direction: column;
-    margin-bottom: 58px;
   }
 
   .pricing .section-name {
@@ -816,6 +816,25 @@ button {
 
   .pricing-plans-list {
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pricing .section-title {
+    max-width: 739px;
+  }
+  .pricing-description {
+    align-self: flex-end;
+  }
+  .pricing-top-part {
+    margin-bottom: 60px;
+  }
+  .pricing-plans-list {
+    gap: 40px;
+  }
+  .pricing-list-plan {
+    min-width: 400px;
+    padding: 50px 40px;
   }
 }
 
