@@ -188,6 +188,9 @@ button {
   .header-auth-wrapper {
     display: block;
   }
+  .btn {
+    font-weight: 600;
+  }
 
   .login {
     margin-right: 40px;
@@ -200,6 +203,13 @@ button {
   .header .container {
     padding-left: 90px;
     padding-right: 90px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .header .container {
+    padding-left: 524px;
+    padding-right: 524px;
   }
 }
 
