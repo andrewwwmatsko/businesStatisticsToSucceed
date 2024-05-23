@@ -188,9 +188,6 @@ button {
   .header-auth-wrapper {
     display: block;
   }
-  .btn {
-    font-weight: 600;
-  }
 
   .login {
     margin-right: 40px;
@@ -205,6 +202,8 @@ button {
     padding-right: 90px;
   }
 }
+
+/* Adaptive 2560 */
 
 @media screen and (min-width: 2560px) {
   .header .container {
@@ -292,6 +291,8 @@ button {
   text-align: center;
   line-height: 1.33;
   border: 1px solid transparent;
+  width: 112px;
+  font-weight: 600px;
 }
 
 .btn:active {
@@ -324,12 +325,6 @@ button {
   visibility: visible;
 }
 
-@media screen and (max-width: 1024px) {
-  .btn {
-    font-weight: 700;
-  }
-}
-
 /* ============ */
 
 /* ================ */
@@ -354,6 +349,10 @@ button {
   max-width: 328px;
   line-height: 1.44;
   margin-bottom: 40px;
+}
+
+.hero-picture {
+  display: none;
 }
 
 .subscription-wrapper {
@@ -420,18 +419,10 @@ button {
   .hero {
     padding-top: 120px;
   }
-
   .hero .container {
-    background-image: url("../img/hero/hero-1024.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 490px auto;
-  }
-
-  @media (min-resolution: 192dpi) {
-    .hero .container {
-      background-image: url("../img/hero/hero-1024-2x.png");
-    }
+    display: flex;
+    padding-right: 0;
+    position: relative;
   }
 
   .hero-title {
@@ -442,6 +433,14 @@ button {
 
   .hero-description {
     max-width: 565px;
+  }
+
+  .hero-picture {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
   }
 
   .subscription-wrapper {
@@ -461,27 +460,27 @@ button {
 
 @media screen and (min-width: 1440px) {
   .hero .container {
-    background-image: url("../img/hero/hero-1440.png");
     padding-left: 90px;
     padding-right: 40px;
   }
-  @media (min-resolution: 192dpi) {
-    .hero .container {
-      background-image: url("../img/hero/hero-1440-2x.png");
-    }
-  }
-
   .hero-title {
     max-width: 721px;
     letter-spacing: -0.04em;
   }
 }
 
+/* Adaptive 2560 */
+
 @media screen and (min-width: 2560px) {
   .hero .container {
     padding-left: 524px;
-    padding-right: 0;
-    margin-right: 524px;
+    padding-right: 524px;
+    gap: 241px;
+  }
+
+  .hero-picture {
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -541,6 +540,8 @@ button {
   }
 }
 
+/* Adaptive 1440 */
+
 @media screen and (min-width: 1440px) {
   .about-us .container {
     padding-left: 0;
@@ -558,6 +559,8 @@ button {
     margin-right: 40px;
   }
 }
+
+/* Adaptive 2560 */
 
 @media screen and (min-width: 2560px) {
   .about-us .container {
@@ -608,6 +611,8 @@ button {
   display: none;
 }
 
+/* Adaptive 1024 */
+
 @media screen and (min-width: 1024px) {
   .how-it-works-picture {
     display: none;
@@ -634,6 +639,8 @@ button {
   }
 }
 
+/* Adaptive 1440 */
+
 @media screen and (min-width: 1440px) {
   .how-it-works .container {
     padding-right: 90px;
@@ -650,6 +657,8 @@ button {
     max-width: 499px;
   }
 }
+
+/* Adaptive 2560 */
 
 @media screen and (min-width: 2560px) {
   .how-it-works .container {
@@ -813,6 +822,8 @@ button {
   background-color: rgb(25, 44, 151);
 }
 
+/* Adaptive 1024 */
+
 @media screen and (min-width: 1024px) {
   .pricing-picture.desktop {
     display: block;
@@ -854,6 +865,8 @@ button {
   }
 }
 
+/* Adaptive 1440 */
+
 @media screen and (min-width: 1440px) {
   .pricing .section-title {
     max-width: 739px;
@@ -872,6 +885,8 @@ button {
     padding: 50px 40px;
   }
 }
+
+/* Adaptive 2560 */
 
 @media screen and (min-width: 2560px) {
   .pricing-top-part {
@@ -972,6 +987,8 @@ button {
   display: block;
 }
 
+/* Adaptive 1024 */
+
 @media screen and (min-width: 1024px) {
   .faqs {
     padding-bottom: 120px;
@@ -1010,6 +1027,8 @@ button {
   }
 }
 
+/* Adaptive 1440 */
+
 @media screen and (min-width: 1440px) {
   .faqs {
     padding-bottom: 200px;
@@ -1022,6 +1041,8 @@ button {
     min-width: 840px;
   }
 }
+
+/* Adaptive 2560 */
 
 @media screen and (min-width: 2560px) {
   .faqs .container {
@@ -1143,6 +1164,8 @@ button {
   margin: 0 auto;
 }
 
+/* Adaptive 1024 */
+
 @media screen and (min-width: 1024px) {
   .footer .container {
     padding: 0 32px;
@@ -1220,6 +1243,8 @@ button {
   }
 }
 
+/* Adaptive 1440 */
+
 @media screen and (min-width: 1440px) {
   .footer {
     padding-top: 34px;
@@ -1253,6 +1278,8 @@ button {
     align-self: flex-start;
   }
 }
+
+/* Adaptive 2560 */
 
 @media screen and (min-width: 2560px) {
   .footer .container {

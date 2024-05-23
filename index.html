@@ -93,40 +93,61 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">
-            Always Track & Analyze Your Business Statistics To Succeed.
-          </h1>
+          <div class="hero-content-wrapper">
+            <h1 class="hero-title">
+              Always Track & Analyze Your Business Statistics To Succeed.
+            </h1>
 
-          <p class="hero-description">
-            A better way to manage your sales, team, clients & marketing — on a
-            single platform. Powerful, affordable & easy.
-          </p>
+            <p class="hero-description">
+              A better way to manage your sales, team, clients & marketing — on
+              a single platform. Powerful, affordable & easy.
+            </p>
 
-          <div class="subscription-wrapper">
-            <input
-              autocomplete="off"
-              class="email"
-              type="text"
-              placeholder="Enter your email"
-              name="email"
-            />
-            <button class="get-started-btn" type="button">Get started</button>
+            <div class="subscription-wrapper">
+              <input
+                autocomplete="off"
+                class="email"
+                type="text"
+                placeholder="Enter your email"
+                name="email"
+              />
+              <button class="get-started-btn" type="button">Get started</button>
+            </div>
+
+            <ul class="supported-payments-list">
+              <li class="payment-method">
+                <img src="./img/icons/visa-icon.svg" alt="visa-icon" />
+              </li>
+              <li class="payment-method">
+                <img
+                  src="./img/icons/mastercard-icon.svg"
+                  alt="mastercard-icon"
+                />
+              </li>
+              <li class="payment-method">
+                <img src="./img/icons/paypal-icon.svg" alt="paypal-icon" />
+              </li>
+            </ul>
           </div>
 
-          <ul class="supported-payments-list">
-            <li class="payment-method">
-              <img src="./img/icons/visa-icon.svg" alt="visa-icon" />
-            </li>
-            <li class="payment-method">
-              <img
-                src="./img/icons/mastercard-icon.svg"
-                alt="mastercard-icon"
-              />
-            </li>
-            <li class="payment-method">
-              <img src="./img/icons/paypal-icon.svg" alt="paypal-icon" />
-            </li>
-          </ul>
+          <picture class="hero-picture">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/hero/hero-1440.png    1x,
+                ./img/hero/hero-1440-2x.png 2x
+              "
+            />
+
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                ./img/hero/hero-1024.png    1x,
+                ./img/hero/hero-1024-2x.png 2x
+              "
+            />
+            <img src="./img/hero/hero-1440.png" alt="A man on a ledder" />
+          </picture>
         </div>
       </section>
 
