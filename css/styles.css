@@ -965,6 +965,19 @@ button {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .faqs {
+    padding-bottom: 200px;
+  }
+  .faqs .container {
+    padding-right: 40px;
+  }
+
+  .faqs-item {
+    min-width: 840px;
+  }
+}
+
 /* ============ */
 
 /* ================ */
