@@ -1144,9 +1144,6 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
-  .footer {
-    padding-bottom: 49px;
-  }
   .footer .container {
     padding: 0 32px;
   }
@@ -1168,7 +1165,8 @@ button {
   }
   .right-part {
     display: flex;
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 60px;
     justify-content: flex-end;
     flex-wrap: wrap;
   }
@@ -1181,10 +1179,14 @@ button {
     margin-bottom: 0;
     text-align: center;
   }
+  .footer-menu {
+    align-items: flex-start;
+  }
 
   .footer-customer-actions {
     max-width: 203px;
     align-items: flex-start;
+    margin-bottom: 0;
   }
   .footer-customer-item {
     text-align: left;
@@ -1232,22 +1234,33 @@ button {
   }
 
   .left-part {
-    margin-right: 140px;
+    margin-right: 100px;
   }
 
   .right-part {
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-    gap: 100px;
+    gap: 87px;
   }
 
   .footer-customer-actions {
     order: -1;
     margin-bottom: 0;
+    align-self: flex-start;
   }
 
   .footer-email {
     align-self: flex-start;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .footer .container {
+    padding-left: 524px;
+    padding-right: 524px;
+  }
+  .left-part {
+    margin-right: 332px;
   }
 }
 
