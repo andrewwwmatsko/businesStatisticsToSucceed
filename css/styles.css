@@ -800,6 +800,7 @@ button {
   padding: 14px 36px;
   min-width: 248px;
   align-self: center;
+  font-weight: 600;
 
   color: #fff;
   text-align: center;
@@ -869,6 +870,15 @@ button {
   .pricing-list-plan {
     min-width: 400px;
     padding: 50px 40px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .pricing-top-part {
+    margin-bottom: 62px;
+  }
+  .pricing-plans-list {
+    gap: 102px;
   }
 }
 
