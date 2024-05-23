@@ -15,18 +15,44 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="./index.html" class="header-logo">
-          <img
-            src="./img/icons/logo-icon.svg"
-            alt="black rounded logo with number 18"
-          />
-        </a>
+        <div class="header-nav-wrapper">
+          <nav class="header-nav-bar">
+            <a href="./index.html" class="header-logo">
+              <img
+                src="./img/icons/logo-icon.svg"
+                alt="black rounded logo with number 18"
+              />
+            </a>
 
-        <button type="button" data-menu-open class="header-mobmenu-btn">
-          <svg class="hamburger-menu-icon">
-            <use href="./img/icons/symbol-defs.svg#icon-hamburger-menu"></use>
-          </svg>
-        </button>
+            <ul class="header-nav-menu">
+              <li class="header-menu-item">
+                <a href="#about-us" class="header-menu-link">About us</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#how-it-works" class="header-menu-link"
+                  >How it works</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a href="#pricing" class="header-menu-link">Pricing</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#faqs" class="header-menu-link">FAQs</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button type="button" data-menu-open class="header-mobmenu-btn">
+            <svg class="hamburger-menu-icon">
+              <use href="./img/icons/symbol-defs.svg#icon-hamburger-menu"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header-auth-wrapper">
+          <button class="btn login" type="button">Login</button>
+          <button class="btn sign-up" type="button">Sign Up</button>
+        </div>
       </div>
 
       <div data-menu class="mob-menu">
