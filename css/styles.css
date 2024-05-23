@@ -87,6 +87,12 @@ button {
   section {
     padding-top: 120px;
   }
+
+  .section-title {
+    font-size: 60px;
+    line-height: normal;
+    letter-spacing: -3px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -538,10 +544,6 @@ button {
 
   .how-it-works .section-title {
     max-width: 398px;
-
-    font-size: 60px;
-    line-height: normal;
-    letter-spacing: -3px;
   }
 
   .how-it-works-list {
@@ -731,9 +733,6 @@ button {
   .pricing .section-title {
     max-width: 396px;
     text-align: right;
-    font-size: 60px;
-    line-height: normal;
-    letter-spacing: -3px;
     align-self: flex-end;
   }
 
@@ -758,10 +757,6 @@ button {
   padding-bottom: 80px;
 }
 
-.faqs .section-name {
-  padding: 24px 20px;
-}
-
 .faqs .section-title {
   margin-bottom: 20px;
   max-width: 188px;
@@ -775,6 +770,10 @@ button {
 .faqs-picture {
   display: block;
   margin-bottom: 40px;
+}
+
+.faqs-picture.desktop {
+  display: none;
 }
 
 .faqs-list {
@@ -834,6 +833,50 @@ button {
 
 .faqs-item-answer.is-active {
   margin-top: 20px;
+}
+.dot {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .faqs {
+    padding-bottom: 120px;
+  }
+
+  .faqs-picture.desktop {
+    display: block;
+  }
+  .faqs-picture {
+    display: none;
+  }
+
+  .faqs .container {
+    display: flex;
+  }
+
+  .faqs-content-wrapper {
+  }
+
+  .faqs .section-title {
+    max-width: 554px;
+    letter-spacing: -4px;
+  }
+  .dot {
+    display: inline;
+  }
+
+  .faqs-description {
+    max-width: 532px;
+    margin-bottom: 60px;
+  }
+
+  .faqs-item {
+    max-width: 700px;
+  }
+
+  .faqs-item-answer {
+    max-width: 660px;
+  }
 }
 
 /* ============ */
