@@ -334,7 +334,6 @@ button {
 
 .email {
   padding: 14px 16px;
-  max-width: 328px;
   border: none;
   max-width: 184px;
 }
@@ -415,11 +414,11 @@ button {
 
   .subscription-wrapper {
     max-width: 505px;
+    margin-bottom: 80px;
   }
 
   .email {
     min-width: 361px;
-    margin-bottom: 80px;
   }
   .supported-payments-list {
     justify-content: flex-start;
@@ -444,10 +443,6 @@ button {
   margin-bottom: 40px;
 }
 
-.desktop {
-  display: none;
-}
-
 .about-us-list {
   list-style-type: square;
   padding-left: 16px;
@@ -459,6 +454,9 @@ button {
 .list-item-text {
   font-size: 20px;
   line-height: 1.4;
+}
+.desktop {
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -519,6 +517,36 @@ button {
 .works-item-text {
   line-height: 1.44;
   max-width: 328px;
+}
+
+.how-it-works-picture.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .how-it-works-picture {
+    display: none;
+  }
+  .how-it-works-picture.desktop {
+    display: block;
+  }
+
+  .how-it-works .container {
+    display: flex;
+  }
+
+  .how-it-works .section-title {
+    max-width: 398px;
+  }
+
+  .how-it-works-list {
+    gap: 48px;
+  }
+  .works-list-item {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+  }
 }
 
 /* ============ */

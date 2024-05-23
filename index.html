@@ -232,13 +232,126 @@
 
       <section class="how-it-works" id="how-it-works">
         <div class="container">
-          <p class="section-name">How it works</p>
+          <div class="how-it-works-content-wrapper">
+            <p class="section-name">How it works</p>
 
-          <h2 class="section-title">
-            Building the best space for collaboration.
-          </h2>
+            <h2 class="section-title">
+              Building the best space for collaboration.
+            </h2>
 
-          <picture class="how-it-works-picture">
+            <picture class="how-it-works-picture">
+              <source
+                media="(min-width: 2560)"
+                srcset="
+                  ./img/icons/how-it-works-picture-2550.png    1x,
+                  ./img/icons/how-it-works-picture-2550-2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/how-it-works-section/how-it-works-picture-1440.png    1x,
+                  ./img/how-it-works-section/how-it-works-picture-1440-2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./img/how-it-works-section/how-it-works-picture-1024.png    1x,
+                  ./img/how-it-works-section/how-it-works-picture-1024-2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 360px)"
+                srcset="
+                  ./img/how-it-works-section/how-it-works-picture-mob.png    1x,
+                  ./img/how-it-works-section/how-it-works-picture-mob-2x.png 2x
+                "
+              />
+              <img
+                src="./img/how-it-works-section/how-it-works-picture-mob.png"
+                alt="Dancing woman holding an instrument above her head"
+              />
+            </picture>
+
+            <ul class="how-it-works-list">
+              <li class="works-list-item">
+                <img
+                  class="works-list-img"
+                  src="./img/icons/shared-cloud-icon.svg"
+                  alt="Puzzle"
+                />
+
+                <div>
+                  <h3 class="works-item-title">Shared Cloud Libraries</h3>
+
+                  <p class="works-item-text">
+                    Navigate to the Your work panel in the left sidebar. Select
+                    the library you want to share. Select the Share icon in the
+                    upper right to share the library.
+                  </p>
+                </div>
+              </li>
+              <li class="works-list-item">
+                <img
+                  class="works-list-img"
+                  src="./img/icons/free-developer-icon.svg"
+                  alt="Scheme"
+                />
+
+                <div>
+                  <h3 class="works-item-title">
+                    Free developer handoff, right inside
+                  </h3>
+
+                  <p class="works-item-text">
+                    Cloud Inspector makes it easy for developers to get the
+                    information they need to turn pixels into code — all in the
+                    browser and, most importantly, for free.
+                  </p>
+                </div>
+              </li>
+              <li class="works-list-item">
+                <img
+                  class="works-list-img"
+                  src="./img/icons/real-time-icon.svg"
+                  alt="Rocket"
+                />
+
+                <div>
+                  <h3 class="works-item-title">
+                    Real-time collaborative editing
+                  </h3>
+
+                  <p class="works-item-text">
+                    Room Service helps you build real-time collaborative
+                    features. Add real-time data sync! Let users edit the same
+                    data at the same time.
+                  </p>
+                </div>
+              </li>
+              <li class="works-list-item">
+                <img
+                  class="works-list-img"
+                  src="./img/icons/integrations-icon.svg"
+                  alt="Box"
+                />
+
+                <div>
+                  <h3 class="works-item-title">
+                    Integrations with the Cloud API
+                  </h3>
+
+                  <p class="works-item-text">
+                    Unlocking that value requires an iPaaS that delivers the
+                    transformative power of APIs and integration.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <picture class="how-it-works-picture desktop">
             <source
               media="(min-width: 2560)"
               srcset="
@@ -272,70 +385,6 @@
               alt="Dancing woman holding an instrument above her head"
             />
           </picture>
-
-          <ul class="how-it-works-list">
-            <li class="works-list-item">
-              <img
-                class="works-list-img"
-                src="./img/icons/shared-cloud-icon.svg"
-                alt="Puzzle"
-              />
-
-              <h3 class="works-item-title">Shared Cloud Libraries</h3>
-
-              <p class="works-item-text">
-                Navigate to the Your work panel in the left sidebar. Select the
-                library you want to share. Select the Share icon in the upper
-                right to share the library.
-              </p>
-            </li>
-            <li class="works-list-item">
-              <img
-                class="works-list-img"
-                src="./img/icons/free-developer-icon.svg"
-                alt="Scheme"
-              />
-
-              <h3 class="works-item-title">
-                Free developer handoff, right inside
-              </h3>
-
-              <p class="works-item-text">
-                Cloud Inspector makes it easy for developers to get the
-                information they need to turn pixels into code — all in the
-                browser and, most importantly, for free.
-              </p>
-            </li>
-            <li class="works-list-item">
-              <img
-                class="works-list-img"
-                src="./img/icons/real-time-icon.svg"
-                alt="Rocket"
-              />
-
-              <h3 class="works-item-title">Real-time collaborative editing</h3>
-
-              <p class="works-item-text">
-                Room Service helps you build real-time collaborative features.
-                Add real-time data sync! Let users edit the same data at the
-                same time.
-              </p>
-            </li>
-            <li class="works-list-item">
-              <img
-                class="works-list-img"
-                src="./img/icons/integrations-icon.svg"
-                alt="Box"
-              />
-
-              <h3 class="works-item-title">Integrations with the Cloud API</h3>
-
-              <p class="works-item-text">
-                Unlocking that value requires an iPaaS that delivers the
-                transformative power of APIs and integration.
-              </p>
-            </li>
-          </ul>
         </div>
       </section>
 
