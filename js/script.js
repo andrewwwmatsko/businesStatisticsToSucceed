@@ -38,4 +38,5 @@ function openMenuHandler() {
 
 function closeMenuHandler() {
   mobmenu.mobModal.classList.remove("is-active");
+  mobmenu.body.classList.remove("fixed-position");
 }
