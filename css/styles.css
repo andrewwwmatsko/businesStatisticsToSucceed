@@ -98,7 +98,7 @@ button {
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding: 0 90px;
+    padding: 0 80px;
   }
 
   section {
@@ -182,7 +182,7 @@ button {
     color: #151515;
     text-align: center;
     line-height: 1.33;
-    padding: 20px 30px;
+    padding: 14px 20px;
   }
 
   .header-auth-wrapper {
@@ -191,6 +191,15 @@ button {
 
   .login {
     margin-right: 40px;
+  }
+}
+
+/* Adaptive for 1440 */
+
+@media screen and (min-width: 1440px) {
+  .header .container {
+    padding-left: 90px;
+    padding-right: 90px;
   }
 }
 
@@ -858,9 +867,6 @@ button {
 
   .faqs .container {
     display: flex;
-  }
-
-  .faqs-content-wrapper {
   }
 
   .faqs .section-title {
