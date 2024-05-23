@@ -956,20 +956,6 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 1.44;
-  padding: 6px 20px;
-  border: 1px solid transparent;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-menu-link:hover,
-.footer-customer-link:hover,
-.footer-email-link:hover,
-.footer-menu-link:focus,
-.footer-customer-link:focus,
-.footer-email-link:focus {
-  border-color: #fff;
 }
 
 .footer-customer-actions {
@@ -992,10 +978,6 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 1.44;
-  padding: 6px 20px;
-  border: 1px solid transparent;
-
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts {
   display: flex;
@@ -1012,6 +994,74 @@ button {
   line-height: 1.44;
   max-width: 175px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer .container {
+    padding: 0 32px;
+  }
+  .footer-top-part {
+    display: flex;
+    margin-bottom: 72px;
+  }
+
+  .footer-title {
+    font-size: 52px;
+    line-height: 1.15;
+    letter-spacing: -4px;
+    max-width: 444px;
+    margin-bottom: 32px;
+  }
+
+  .left-part {
+    margin-right: 75px;
+  }
+  .right-part {
+    display: flex;
+    gap: 80px;
+  }
+
+  .footer .subscription-wrapper {
+    margin-bottom: 0;
+  }
+
+  .footer-nav {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .footer-customer-actions {
+    max-width: 203px;
+    align-items: flex-start;
+  }
+  .footer-customer-item {
+    text-align: left;
+  }
+  .footer-customer-link {
+    letter-spacing: -0.028em;
+  }
+
+  .footer-menu-link {
+    padding: 0;
+  }
+
+  .footer-email {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .bottom-part {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .terms {
+    margin: 0;
+    max-width: 341px;
+  }
+  .footer-contacts {
+    margin-bottom: 0;
+  }
 }
 
 /* ================ */
