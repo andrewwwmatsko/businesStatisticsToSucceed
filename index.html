@@ -132,20 +132,7 @@
 
       <section class="about-us" id="about-us">
         <div class="container">
-          <p class="section-name">About us</p>
-
-          <h2 class="section-title">
-            Faster, friendlier feedback loops make life easier.
-          </h2>
-
-          <p class="about-us-description">
-            Add a Viewer to your team so they can see everything you share, or
-            invite people to individual documents. It’s up to you. Stakeholders
-            can check out designs in their web browser, test prototypes and
-            leave feedback for free.
-          </p>
-
-          <picture class="about-us-picture">
+          <picture class="about-us-picture desktop">
             <source
               media="(min-width: 1440px)"
               srcset="
@@ -168,36 +155,78 @@
               "
             />
             <img
-              width="328"
-              height="292"
               src="./img/about-us-section/about-us-mob-picture.png"
               alt="Woman lies on the planet Earth"
             />
           </picture>
+          <div class="about-us-content-wrapper">
+            <p class="section-name">About us</p>
 
-          <ul class="about-us-list">
-            <li class="about-us-list-item">
-              <p class="list-item-text">
-                Shared Cloud Libraries, for a single source of truth
-              </p>
-            </li>
-            <li class="about-us-list-item">
-              <p class="list-item-text">
-                Prototype previews for user testing and research
-              </p>
-            </li>
-            <li class="about-us-list-item">
-              <p class="list-item-text">Easy organization with projects</p>
-            </li>
-            <li class="about-us-list-item">
-              <p class="list-item-text">
-                Free developer handoff, right inside the browser
-              </p>
-            </li>
-            <li class="about-us-list-item">
-              <p class="list-item-text">Two-factor authentication and SSO</p>
-            </li>
-          </ul>
+            <h2 class="section-title">
+              Faster, friendlier feedback loops make life easier.
+            </h2>
+
+            <p class="about-us-description">
+              Add a Viewer to your team so they can see everything you share, or
+              invite people to individual documents. It’s up to you.
+              Stakeholders can check out designs in their web browser, test
+              prototypes and leave feedback for free.
+            </p>
+
+            <picture class="about-us-picture">
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/about-us-section/about-us-1440-picture.png    1x,
+                  ./img/about-us-section/about-us-1440-2x-picture.png 2x
+                "
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  ./img/about-us-section/about-us-1024-picture.png    1x,
+                  ./img/about-us-section/about-us-1024-2x-picture.png 2x
+                "
+              />
+              <source
+                media="(min-width: 360px)"
+                srcset="
+                  ./img/about-us-section/about-us-mob-picture.png    1x,
+                  ./img/about-us-section/about-us-mob-picture-2x.png 2x
+                "
+              />
+              <img
+                width="328"
+                height="292"
+                src="./img/about-us-section/about-us-mob-picture.png"
+                alt="Woman lies on the planet Earth"
+              />
+            </picture>
+
+            <ul class="about-us-list">
+              <li class="about-us-list-item">
+                <p class="list-item-text">
+                  Shared Cloud Libraries, for a single source of truth
+                </p>
+              </li>
+              <li class="about-us-list-item">
+                <p class="list-item-text">
+                  Prototype previews for user testing and research
+                </p>
+              </li>
+              <li class="about-us-list-item">
+                <p class="list-item-text">Easy organization with projects</p>
+              </li>
+              <li class="about-us-list-item">
+                <p class="list-item-text">
+                  Free developer handoff, right inside the browser
+                </p>
+              </li>
+              <li class="about-us-list-item">
+                <p class="list-item-text">Two-factor authentication and SSO</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 

@@ -444,6 +444,10 @@ button {
   margin-bottom: 40px;
 }
 
+.desktop {
+  display: none;
+}
+
 .about-us-list {
   list-style-type: square;
   padding-left: 16px;
@@ -455,6 +459,31 @@ button {
 .list-item-text {
   font-size: 20px;
   line-height: 1.4;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-us-picture {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+
+  .about-us .container {
+    display: flex;
+  }
+
+  .about-us .section-name {
+    padding-bottom: 0;
+  }
+  .about-us .section-title {
+    max-width: 464px;
+  }
+
+  .about-us-description {
+    max-width: 529px;
+    margin-bottom: 60px;
+  }
 }
 
 /* ============ */
