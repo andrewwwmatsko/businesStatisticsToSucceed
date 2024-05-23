@@ -651,6 +651,15 @@ button {
   }
 }
 
+@media screen and (min-width: 2560px) {
+  .how-it-works .container {
+    padding-right: 524px;
+  }
+  .how-it-works-content-wrapper {
+    margin-right: 363px;
+  }
+}
+
 /* ============ */
 
 /* Pricing */
