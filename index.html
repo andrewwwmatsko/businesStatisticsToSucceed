@@ -22,13 +22,46 @@
           />
         </a>
 
-        <button type="button" class="header-mobmenu-btn">
+        <button type="button" data-menu-open class="header-mobmenu-btn">
           <svg class="hamburger-menu-icon">
             <use href="./img/icons/symbol-defs.svg#icon-hamburger-menu"></use>
           </svg>
         </button>
       </div>
+
+      <div data-menu class="mob-menu">
+        <div class="mob-container">
+          <button type="button" data-menu-close class="modal-close-btn mob">
+            <svg class="modal-close-icon">
+              <use href="./img/icons/symbol-defs.svg#icon-mob-menu-close"></use>
+            </svg>
+          </button>
+
+          <nav class="mob-navigation-menu">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a href="#about-us" class="mob-menu-link" About us></a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="#how-it-works" class="mob-menu-link">How it works</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="#pricing" class="mob-menu-link">Pricing</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="#faqs" class="mob-menu-link">FAQs</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mob-btn-wrapper">
+            <button class="btn login" type="button">Login</button>
+            <button class="btn sign-up" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
     </header>
+
     <main>
       <section class="hero">
         <div class="container">

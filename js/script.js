@@ -18,3 +18,22 @@ for (let i = 0; i < accordionWrapper.length; i++) {
     }
   });
 }
+
+//mob menu
+
+const mobmenu = {
+  closeMenuBtn: document.querySelector("[data-menu-close]"),
+  openMenuBtn: document.querySelector("[data-menu-open]"),
+  mobModal: document.querySelector("[data-menu]"),
+};
+
+mobmenu.openMenuBtn.addEventListener("click", openMenuHandler);
+mobmenu.closeMenuBtn.addEventListener("click", closeMenuHandler);
+
+function openMenuHandler() {
+  mobmenu.mobModal.classList.add("is-active");
+}
+
+function closeMenuHandler() {
+  mobmenu.mobModal.classList.remove("is-active");
+}
