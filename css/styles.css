@@ -526,6 +526,20 @@ button {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .about-us .container {
+    padding-left: 0;
+    padding-right: 70px;
+  }
+  .about-us .section-title {
+    max-width: 750px;
+    letter-spacing: -0.05em;
+  }
+  .about-us-description {
+    max-width: 712px;
+  }
+}
+
 /* ============ */
 
 /* How it works */
