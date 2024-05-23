@@ -538,6 +538,10 @@ button {
   .about-us-description {
     max-width: 712px;
   }
+
+  .about-us-picture {
+    margin-right: 40px;
+  }
 }
 
 /* ============ */
@@ -602,6 +606,23 @@ button {
     display: flex;
     gap: 28px;
     align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .how-it-works .container {
+    padding-right: 90px;
+  }
+  .how-it-works .section-title {
+    max-width: 659px;
+  }
+
+  .how-it-works-content-wrapper {
+    margin-right: 120px;
+  }
+
+  .works-item-text {
+    max-width: 499px;
   }
 }
 
