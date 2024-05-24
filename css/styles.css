@@ -291,8 +291,8 @@ button {
   text-align: center;
   line-height: 1.33;
   border: 1px solid transparent;
-  width: 112px;
-  font-weight: 600px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .btn:active {
@@ -397,8 +397,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.get-started-btn:hover,
-.get-started-btn:focus {
+.get-started-btn:hover {
   background-color: rgb(25, 44, 151);
 }
 
@@ -793,8 +792,7 @@ button {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pricing-list-plan:nth-of-type(2) .pricing-join-btn:hover,
-.pricing-list-plan:nth-of-type(2) .pricing-join-btn:focus {
+.pricing-list-plan:nth-of-type(2) .pricing-join-btn:hover {
   background-color: #ffffff9f;
   color: #fff;
 }
@@ -809,7 +807,8 @@ button {
   padding: 14px 36px;
   min-width: 248px;
   align-self: center;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-size: 18px;
 
   color: #fff;
   text-align: center;
@@ -817,8 +816,7 @@ button {
   transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pricing-join-btn:hover,
-.pricing-join-btn:focus {
+.pricing-join-btn:hover {
   background-color: rgb(25, 44, 151);
 }
 
@@ -1098,8 +1096,7 @@ button {
     color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer .get-started-btn:hover,
-.footer .get-started-btn:focus {
+.footer .get-started-btn:hover {
   border-color: #fff;
   color: #fff;
 }
