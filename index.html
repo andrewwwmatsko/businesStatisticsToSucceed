@@ -816,12 +816,15 @@
               </a>
             </li>
             <li class="footer-contacts-item">
-              <a href="" class="contacts-link">
+              <a
+                href="https://www.linkedin.com/in/andrii-matsko-271337177/"
+                class="contacts-link"
+              >
                 <img src="./img/icons/social_in.svg" alt="LinkedIn icon" />
               </a>
             </li>
             <li class="footer-contacts-item">
-              <a href="." class="contacts-link">
+              <a href="https://www.youtube.com/" class="contacts-link">
                 <img src="./img/icons/social_yt.svg" alt="YouTube icon" />
               </a>
             </li>
@@ -834,6 +837,42 @@
         </div>
       </div>
     </footer>
+
+    <div data-login class="backdrop is-active">
+      <div class="login-container">
+        <button type="button" data-auth-close class="close-modal-auth-btn">
+          <svg class="modal-close-icon">
+            <use href="./img/icons/symbol-defs.svg#icon-mob-menu-close"></use>
+          </svg>
+        </button>
+
+        <h2 class="login-title">Login</h2>
+
+        <form autocomplete="off" class="login-form">
+          <div class="login-email-wrapper">
+            <label for="login-email">Email</label>
+            <input
+              type="text"
+              id="login-email"
+              name="login-email"
+              placeholder="Enter your email..."
+            />
+          </div>
+
+          <div class="login-password-wrapper">
+            <label for="login-password">Password</label>
+            <input
+              type="password"
+              name="login-password"
+              id="login-password"
+              placeholder="Enter your password..."
+            />
+          </div>
+
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
 
     <script type="module" src="./js/script.js"></script>
   </body>

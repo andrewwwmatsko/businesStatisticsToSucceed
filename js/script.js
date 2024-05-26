@@ -58,3 +58,23 @@ function closeMenyByAnchorLink(event) {
     closeMenuHandler();
   }
 }
+
+// login and sign up form appearance
+const authRefs = {
+  loginBtn: document.querySelector(".btn.login"),
+  signUpBtn: document.querySelector("btn.sign-up"),
+  closeAuthWindowBtn: document.querySelector("[data-auth-close]"),
+
+  loginContainerEl: document.querySelector("[data-login]"),
+};
+
+authRefs.loginBtn.addEventListener("click", onClickLoginBtn);
+authRefs.closeAuthWindowBtn.addEventListener("click", onCloseAuthWindow);
+
+function onClickLoginBtn() {
+  authRefs.loginContainerEl.classList.add("is-active");
+}
+
+function onCloseAuthWindow() {
+  authRefs.loginContainerEl.classList.remove("is-active");
+}
