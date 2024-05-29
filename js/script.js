@@ -1,6 +1,8 @@
 // accordion
 const accordionWrapper = document.querySelectorAll(".faqs-item-title-wrapper");
 
+const body = document.querySelector("body");
+
 for (let i = 0; i < accordionWrapper.length; i++) {
   accordionWrapper[i].addEventListener("click", (e) => {
     const content = e.currentTarget.nextElementSibling;
@@ -25,7 +27,6 @@ const mobmenu = {
   closeMenuBtn: document.querySelector("[data-menu-close]"),
   openMenuBtn: document.querySelector("[data-menu-open]"),
   mobModal: document.querySelector("[data-menu]"),
-  body: document.querySelector("body"),
 };
 
 mobmenu.openMenuBtn.addEventListener("click", openMenuHandler);
@@ -33,17 +34,17 @@ mobmenu.closeMenuBtn.addEventListener("click", closeMenuHandler);
 
 function openMenuHandler() {
   mobmenu.mobModal.classList.add("is-active");
-  mobmenu.body.classList.add("fixed-position");
+  body.classList.add("fixed-position");
 }
 
 function closeMenuHandler() {
   mobmenu.mobModal.classList.remove("is-active");
-  mobmenu.body.classList.remove("fixed-position");
+  body.classList.remove("fixed-position");
 }
 
 // close mob menu when following anchor links
 
-const mobMenuList = {
+const mobMenuRefs = {
   mobMenuUl: document.querySelector(".mob-menu-list"),
   aboutUsLink: document.querySelector("a[href='#about-us']"),
   howItWorksLink: document.querySelector("a[href='#how-it-works']"),
@@ -51,7 +52,7 @@ const mobMenuList = {
   faqsLink: document.querySelector("a[href='#faqs']"),
 };
 
-mobMenuList.mobMenuUl.addEventListener("click", closeMenyByAnchorLink);
+mobMenuRefs.mobMenuUl.addEventListener("click", closeMenyByAnchorLink);
 
 function closeMenyByAnchorLink(event) {
   if (event.target.classList.contains("mob-menu-link")) {
@@ -61,20 +62,58 @@ function closeMenyByAnchorLink(event) {
 
 // login and sign up form appearance
 const authRefs = {
-  loginBtn: document.querySelector(".btn.login"),
-  signUpBtn: document.querySelector("btn.sign-up"),
+  loginBtnArr: document.querySelectorAll(".btn.login"),
+  signUpBtn: document.querySelectorAll(".btn.sign-up"),
   closeAuthWindowBtn: document.querySelector("[data-auth-close]"),
+  closeSignupWindowBtn: document.querySelector("[data-signup-close]"),
 
   loginContainerEl: document.querySelector("[data-login]"),
+  signupContainerEl: document.querySelector("[data-signup]"),
+
+  forms: document.querySelectorAll(".login-form"),
 };
 
-authRefs.loginBtn.addEventListener("click", onClickLoginBtn);
+//showing login / signup modal windows
+authRefs.loginBtnArr.forEach((el) => {
+  el.addEventListener("click", onClickLoginBtn);
+});
+authRefs.signUpBtn.forEach((el) => {
+  el.addEventListener("click", onClickSignupBtn);
+});
+
+//closing login / signup modal windows
 authRefs.closeAuthWindowBtn.addEventListener("click", onCloseAuthWindow);
+authRefs.closeSignupWindowBtn.addEventListener("click", onCloseSignWindow);
+
+//forms
+
+authRefs.forms.forEach((form) => {
+  form.addEventListener("sumbit", (event) => {
+    event.preventDefault();
+  });
+});
 
 function onClickLoginBtn() {
+  if (mobmenu.mobModal.classList.contains("is-active")) {
+    closeMenuHandler();
+  }
   authRefs.loginContainerEl.classList.add("is-active");
+  body.classList.add("fixed-position");
+}
+
+function onClickSignupBtn() {
+  if (mobmenu.mobModal.classList.contains("is-active")) {
+    closeMenuHandler();
+  }
+  authRefs.signupContainerEl.classList.add("is-active");
+  body.classList.add("fixed-position");
 }
 
 function onCloseAuthWindow() {
   authRefs.loginContainerEl.classList.remove("is-active");
+  body.classList.remove("fixed-position");
+}
+function onCloseSignWindow() {
+  authRefs.signupContainerEl.classList.remove("is-active");
+  body.classList.remove("fixed-position");
 }

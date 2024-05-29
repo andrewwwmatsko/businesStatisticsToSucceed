@@ -838,7 +838,7 @@
       </div>
     </footer>
 
-    <div data-login class="backdrop is-active">
+    <div data-login class="backdrop">
       <div class="login-container">
         <button type="button" data-auth-close class="close-modal-auth-btn">
           <svg class="modal-close-icon">
@@ -852,6 +852,7 @@
           <div class="login-email-wrapper">
             <label for="login-email">Email</label>
             <input
+              class="login-input"
               type="text"
               id="login-email"
               name="login-email"
@@ -862,6 +863,7 @@
           <div class="login-password-wrapper">
             <label for="login-password">Password</label>
             <input
+              class="login-input"
               type="password"
               name="login-password"
               id="login-password"
@@ -869,7 +871,86 @@
             />
           </div>
 
-          <button type="submit">Login</button>
+          <button class="auth-submit-btn" type="submit">Login</button>
+
+          <div class="login-additional-steps">
+            <a class="forgot-password-link" href="./index.html"
+              >Forgot Password?</a
+            >
+
+            <p class="signup-redirect">
+              Don't have an account?
+              <button
+                data-signup-redirect
+                class="sign-up-redirect-btn"
+                type="button"
+              >
+                Signup
+              </button>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div data-signup class="backdrop">
+      <div class="login-container">
+        <button type="button" data-signup-close class="close-modal-auth-btn">
+          <svg class="modal-close-icon">
+            <use href="./img/icons/symbol-defs.svg#icon-mob-menu-close"></use>
+          </svg>
+        </button>
+
+        <h2 class="login-title">Sign Up</h2>
+
+        <form autocomplete="off" class="login-form">
+          <div class="login-email-wrapper">
+            <label for="login-email">Email</label>
+            <input
+              class="login-input"
+              type="text"
+              id="login-email"
+              name="login-email"
+              placeholder="Enter your email..."
+            />
+          </div>
+
+          <div class="login-password-wrapper">
+            <label for="login-password">Password</label>
+            <input
+              class="login-input"
+              type="password"
+              name="login-password"
+              id="login-password"
+              placeholder="Enter your password..."
+            />
+          </div>
+
+          <div class="login-password-wrapper">
+            <label for="login-password">Confirm password</label>
+            <input
+              class="login-input"
+              type="password"
+              name="login-password"
+              id="login-password"
+              placeholder="Enter your password..."
+            />
+          </div>
+
+          <button class="auth-submit-btn" type="submit">Signup</button>
+
+          <div class="login-additional-steps">
+            <p class="signup-redirect">
+              Already have an account?
+              <button
+                data-login-redirect
+                class="sign-up-redirect-btn"
+                type="button"
+              >
+                Login
+              </button>
+            </p>
+          </div>
         </form>
       </div>
     </div>
