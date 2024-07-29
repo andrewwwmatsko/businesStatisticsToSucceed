@@ -1,3 +1,7 @@
-# businesStatisticsToSucceed
+**BusinesStatisticsToSucceed**
 
-This website is being created using HTML5 and CSS3 applying Mobile First methodology.
+You can find interesting information regarding the services the company provide!
+
+The website is created using HTML, CSS and JS, so feel free to enjoi its beautiful UI 🤩
+
+
